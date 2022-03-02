@@ -18,4 +18,22 @@ puts "Creating freebies..."
 # ***************************************************************
 # Create freebies Here
 
+items = [
+    {name: "Rolex", price: 10000},
+    {name: "Sticker", price: 2},
+    {name: "Lambo", price: 175000},
+    {name: "Battery Bank", price: 100}
+]
+
+7.times {
+    the_gift = items.sample
+    Freebie.create(
+        item_name: the_gift[:name], 
+        value: the_gift[:price], 
+        dev_id: Dev.pluck(:id).sample,
+        company_id: Company.all.sample.id
+    )
+}
+
+
 puts "Seeding done!"
