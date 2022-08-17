@@ -1,3 +1,22 @@
+
+
+
+
+
+
+    company ----< freebie >------ dev
+
+
+
+
+
+
+
+
+
+
+
+
 # Phase 3 Active Record Mock Code Challenge: Freebie Tracker
 
 ## Learning Goals
